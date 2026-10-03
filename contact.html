@@ -1,96 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact & Write for Us | Wanderwise Journal</title>
 
-    <meta name="description" content="Contact Wanderwise Journal for travel questions, collaborations, guest contributions, travel writing opportunities and feedback. Get in touch with Laxmi Pal.">
+    <meta name="description"
+          content="Contact Wanderwise Journal for travel questions, collaborations, guest contributions, travel writing opportunities and feedback. Get in touch with Laxmi Pal.">
 
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/wanderwise-journal/contact.html">
-
+    <link rel="canonical"
+          href="https://laxmi-seo-marketing.github.io/wanderwise-journal/contact.html">
 
     <!-- Open Graph -->
+    <meta property="og:title"
+          content="Contact & Write for Us | Wanderwise Journal">
 
-    <meta property="og:title" content="Contact & Write for Us | Wanderwise Journal">
-
-    <meta property="og:description" content="Get in touch with Wanderwise Journal for travel collaborations, guest contributions, feedback and travel-related enquiries.">
-
-    <meta property="og:url" content="https://laxmi-seo-marketing.github.io/wanderwise-journal/contact.html">
+    <meta property="og:description"
+          content="Get in touch with Wanderwise Journal for travel questions, collaborations, guest contributions and travel writing opportunities.">
 
     <meta property="og:type" content="website">
 
+    <meta property="og:url"
+          content="https://laxmi-seo-marketing.github.io/wanderwise-journal/contact.html">
+
     <meta property="og:site_name" content="Wanderwise Journal">
 
-
     <!-- Twitter -->
-
     <meta name="twitter:card" content="summary">
 
-    <meta name="twitter:title" content="Contact & Write for Us | Wanderwise Journal">
+    <meta name="twitter:title"
+          content="Contact & Write for Us | Wanderwise Journal">
 
-    <meta name="twitter:description" content="Contact Wanderwise Journal for collaborations, guest contributions and travel-related enquiries.">
+    <meta name="twitter:description"
+          content="Contact Wanderwise Journal for travel questions, collaborations, guest contributions and travel writing opportunities.">
 
+    <meta name="theme-color" content="#0f766e">
 
     <!-- Google Search Console -->
+    <meta name="google-site-verification"
+          content="TdyVgjIftetYsRfMSmUZb_QI_Th_SfNd02HdyCS8HjA">
 
-    <meta name="google-site-verification" content="TdyVgjIftetYsRfMSmUZb_QI_Th_SfNd02HdyCS8HjA">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-    <!-- Google Analytics -->
+    <style>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSJSHDVPJ0"></script>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0f766e;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: #1f2937;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #0f766e;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #ecfdf5,
+                    #f0fdfa
+                );
+
+            padding: 85px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 54px);
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #0f766e;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: auto;
+            color: #4b5563;
+            font-size: 18px;
+        }
+
+        /* =========================
+           CONTACT CARDS
+        ========================== */
+
+        .contact-cards {
+            margin-top: -45px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 30px 25px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+        }
+
+        .contact-icon {
+            width: 54px;
+            height: 54px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #ccfbf1;
+            color: #0f766e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 7px;
+            font-size: 18px;
+            color: #111827;
+        }
+
+        .contact-card p {
+            color: #6b7280;
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        .contact-card a {
+            color: #0f766e;
+            font-weight: 600;
+        }
+
+        /* =========================
+           MAIN CONTACT SECTION
+        ========================== */
+
+        .main-section {
+            padding: 85px 0;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .content-box {
+            background: #ffffff;
+            padding: 38px;
+            border-radius: 20px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+        }
+
+        .section-label {
+            color: #0f766e;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .content-box h2 {
+            font-size: 30px;
+            line-height: 1.25;
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        .content-box > p {
+            color: #6b7280;
+            margin-bottom: 25px;
+        }
+
+        .reason-list {
+            list-style: none;
+        }
+
+        .reason-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            color: #374151;
+        }
+
+        .reason-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #0f766e;
+            font-weight: 800;
+        }
+
+        /* =========================
+           WRITE FOR US
+        ========================== */
+
+        .write-section {
+            padding: 0 0 85px;
+        }
+
+        .write-box {
+            background: #0f766e;
+            color: #ffffff;
+            border-radius: 24px;
+            padding: 55px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .write-box::after {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            right: -100px;
+            top: -100px;
+        }
+
+        .write-box h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .write-box > p {
+            max-width: 760px;
+            color: #d1fae5;
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .write-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .write-column h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .write-column ul {
+            list-style: none;
+        }
+
+        .write-column li {
+            margin-bottom: 11px;
+            padding-left: 25px;
+            position: relative;
+            color: #ecfdf5;
+        }
+
+        .write-column li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            font-size: 20px;
+        }
+
+        .write-button {
+            display: inline-block;
+            background: #ffffff;
+            color: #0f766e;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+
+        .write-button:hover {
+            background: #ccfbf1;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           FORM
+        ========================== */
+
+        .form-section {
+            padding-bottom: 90px;
+        }
+
+        .form-wrapper {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .form-info {
+            padding-top: 10px;
+        }
+
+        .form-info h2 {
+            font-size: 34px;
+            line-height: 1.25;
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        .form-info p {
+            color: #6b7280;
+            margin-bottom: 25px;
+        }
+
+        .form-note {
+            background: #ecfdf5;
+            border-left: 4px solid #0f766e;
+            padding: 18px;
+            border-radius: 8px;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .form-box {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+            background: #ffffff;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #0f766e;
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.10);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 15px 22px;
+            background: #0f766e;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-family: inherit;
+        }
+
+        .submit-btn:hover {
+            background: #115e59;
+            transform: translateY(-1px);
+        }
+
+        /* =========================
+           LINKEDIN CTA
+        ========================== */
+
+        .linkedin-section {
+            padding-bottom: 85px;
+        }
+
+        .linkedin-box {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 35px;
+            text-align: center;
+        }
+
+        .linkedin-box h2 {
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .linkedin-box p {
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            background: #0a66c2;
+            color: #ffffff;
+            padding: 12px 23px;
+            border-radius: 7px;
+            font-weight: 700;
+        }
+
+        .linkedin-btn:hover {
+            background: #084d91;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 45px;
+            padding-bottom: 35px;
+        }
+
+        footer h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 9px;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 20px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 18px 0;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .two-column,
+            .form-wrapper,
+            .write-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-cards {
+                margin-top: 30px;
+            }
+
+            .write-box {
+                padding: 35px 25px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 65px 15px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .main-section {
+                padding: 60px 0;
+            }
+
+            .content-box,
+            .form-box {
+                padding: 25px 20px;
+            }
+
+            .write-box h2 {
+                font-size: 28px;
+            }
+
+            .form-info h2,
+            .content-box h2 {
+                font-size: 27px;
+            }
+
+            .linkedin-box {
+                padding: 28px 20px;
+            }
+        }
+
+    </style>
+
+    <!-- =========================
+         GOOGLE ANALYTICS
+    ========================== -->
+
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-VSJSHDVPJ0">
+    </script>
 
     <script>
-
         window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
+        function gtag(){
             dataLayer.push(arguments);
         }
 
         gtag('js', new Date());
 
         gtag('config', 'G-VSJSHDVPJ0');
-
     </script>
 
-
-    <!-- Contact Page Schema -->
+    <!-- =========================
+         STRUCTURED DATA
+    ========================== -->
 
     <script type="application/ld+json">
-
     {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Contact Wanderwise Journal",
+        "name": "Contact & Write for Us | Wanderwise Journal",
         "url": "https://laxmi-seo-marketing.github.io/wanderwise-journal/contact.html",
-        "description": "Contact Wanderwise Journal for travel questions, collaborations, guest contributions and feedback.",
+        "description": "Contact Wanderwise Journal for travel questions, collaborations, guest contributions, travel writing opportunities and feedback.",
         "mainEntity": {
             "@type": "Person",
             "name": "Laxmi Pal",
             "jobTitle": "SEO Executive & Digital Marketing Professional",
-            "email": "mailto:laxmipal1501@gmail.com",
-            "telephone": "+91 97185 51213",
+            "email": "laxmipal1501@gmail.com",
+            "telephone": "+91-9718551213",
             "sameAs": [
                 "https://www.linkedin.com/in/laxmipal-seo/"
             ]
         }
     }
-
     </script>
 
-
-    <!-- Breadcrumb Schema -->
-
     <script type="application/ld+json">
-
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -109,1384 +717,687 @@
             }
         ]
     }
-
     </script>
-
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f8fb;
-            color: #202124;
-            line-height: 1.7;
-        }
-
-
-        a {
-            text-decoration: none;
-        }
-
-
-        /* ================= HEADER ================= */
-
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e9ed;
-
-            position: sticky;
-            top: 0;
-
-            z-index: 1000;
-        }
-
-
-        .top-bar {
-            max-width: 1200px;
-
-            margin: auto;
-
-            padding: 18px 25px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-        }
-
-
-        .logo {
-            font-size: 27px;
-
-            font-weight: 800;
-
-            color: #123c52;
-        }
-
-
-        .tagline {
-            color: #777;
-
-            font-size: 13px;
-
-            margin-top: 2px;
-        }
-
-
-        nav {
-            max-width: 1200px;
-
-            margin: auto;
-
-            padding: 0 25px 16px;
-
-            display: flex;
-
-            justify-content: center;
-
-            gap: 28px;
-
-            flex-wrap: wrap;
-        }
-
-
-        nav a {
-            font-size: 15px;
-
-            font-weight: 600;
-
-            color: #333;
-
-            transition: .3s;
-        }
-
-
-        nav a:hover,
-        nav a.active {
-            color: #147d92;
-        }
-
-
-        /* ================= HERO ================= */
-
-        .hero {
-            background:
-                linear-gradient(
-                    135deg,
-                    #e9f7fa,
-                    #ffffff
-                );
-
-            padding: 75px 25px;
-
-            text-align: center;
-        }
-
-
-        .hero-label {
-            display: inline-block;
-
-            background: #ffffff;
-
-            border: 1px solid #cfe8ed;
-
-            color: #147d92;
-
-            padding: 7px 16px;
-
-            border-radius: 30px;
-
-            font-size: 13px;
-
-            font-weight: 700;
-
-            margin-bottom: 15px;
-        }
-
-
-        .hero h1 {
-            font-size: 46px;
-
-            color: #123c52;
-
-            margin-bottom: 15px;
-        }
-
-
-        .hero p {
-            max-width: 750px;
-
-            margin: auto;
-
-            color: #5c666c;
-
-            font-size: 17px;
-        }
-
-
-        /* ================= CONTAINER ================= */
-
-        .container {
-            max-width: 1100px;
-
-            margin: auto;
-
-            padding: 65px 25px;
-        }
-
-
-        /* ================= CONTACT CARDS ================= */
-
-        .contact-grid {
-            display: grid;
-
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 20px;
-
-            margin-bottom: 60px;
-        }
-
-
-        .contact-card {
-            background: #ffffff;
-
-            padding: 30px 25px;
-
-            border-radius: 16px;
-
-            border: 1px solid #e5ebee;
-
-            text-align: center;
-
-            transition: .3s;
-        }
-
-
-        .contact-card:hover {
-            transform: translateY(-5px);
-
-            box-shadow: 0 12px 30px rgba(20,60,80,.08);
-        }
-
-
-        .contact-icon {
-            width: 55px;
-
-            height: 55px;
-
-            margin: 0 auto 15px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background: #eaf7fa;
-
-            color: #147d92;
-
-            font-size: 22px;
-        }
-
-
-        .contact-card h3 {
-            color: #123c52;
-
-            font-size: 19px;
-
-            margin-bottom: 8px;
-        }
-
-
-        .contact-card p {
-            color: #687277;
-
-            font-size: 14px;
-
-            margin-bottom: 12px;
-        }
-
-
-        .contact-card a {
-            color: #147d92;
-
-            font-weight: 700;
-
-            font-size: 14px;
-        }
-
-
-        /* ================= MAIN GRID ================= */
-
-        .main-grid {
-            display: grid;
-
-            grid-template-columns: 1.05fr .95fr;
-
-            gap: 30px;
-
-            margin-bottom: 60px;
-        }
-
-
-        .box {
-            background: #ffffff;
-
-            border-radius: 18px;
-
-            padding: 35px;
-
-            border: 1px solid #e5ebee;
-
-            box-shadow: 0 7px 25px rgba(20,50,70,.04);
-        }
-
-
-        .box h2 {
-            color: #123c52;
-
-            font-size: 29px;
-
-            margin-bottom: 14px;
-        }
-
-
-        .box h3 {
-            color: #123c52;
-
-            font-size: 18px;
-
-            margin-top: 23px;
-
-            margin-bottom: 7px;
-        }
-
-
-        .box p {
-            color: #5c666c;
-
-            font-size: 15px;
-
-            margin-bottom: 13px;
-        }
-
-
-        .box ul {
-            padding-left: 20px;
-
-            color: #5c666c;
-
-            font-size: 15px;
-        }
-
-
-        .box li {
-            margin-bottom: 8px;
-        }
-
-
-        /* ================= WRITE FOR US ================= */
-
-        .write-box {
-            background:
-                linear-gradient(
-                    135deg,
-                    #123c52,
-                    #147d92
-                );
-
-            color: #ffffff;
-
-            border-radius: 20px;
-
-            padding: 45px;
-
-            margin-bottom: 60px;
-
-            position: relative;
-
-            overflow: hidden;
-        }
-
-
-        .write-box::after {
-            content: "✦";
-
-            position: absolute;
-
-            right: 35px;
-
-            top: 20px;
-
-            font-size: 100px;
-
-            opacity: .08;
-        }
-
-
-        .write-box h2 {
-            color: #ffffff;
-
-            font-size: 32px;
-
-            margin-bottom: 12px;
-        }
-
-
-        .write-box > p {
-            color: #e3f3f5;
-
-            max-width: 780px;
-
-            margin-bottom: 22px;
-        }
-
-
-        .write-content {
-            display: grid;
-
-            grid-template-columns: 1fr 1fr;
-
-            gap: 30px;
-
-            margin-top: 25px;
-        }
-
-
-        .write-content h3 {
-            color: #ffffff;
-
-            font-size: 18px;
-
-            margin-bottom: 10px;
-        }
-
-
-        .write-content ul {
-            padding-left: 20px;
-
-            color: #e3f3f5;
-
-            font-size: 14px;
-        }
-
-
-        .write-content li {
-            margin-bottom: 8px;
-        }
-
-
-        .write-button {
-            display: inline-block;
-
-            margin-top: 25px;
-
-            background: #ffffff;
-
-            color: #123c52;
-
-            padding: 12px 22px;
-
-            border-radius: 8px;
-
-            font-weight: 700;
-
-            transition: .3s;
-        }
-
-
-        .write-button:hover {
-            background: #e8f8fa;
-
-            transform: translateY(-2px);
-        }
-
-
-        /* ================= FORM ================= */
-
-        .form-box {
-            background: #ffffff;
-
-            border-radius: 18px;
-
-            padding: 38px;
-
-            border: 1px solid #e5ebee;
-
-            margin-bottom: 60px;
-        }
-
-
-        .form-box h2 {
-            color: #123c52;
-
-            font-size: 29px;
-
-            margin-bottom: 8px;
-        }
-
-
-        .form-intro {
-            color: #687277;
-
-            margin-bottom: 25px;
-
-            font-size: 15px;
-        }
-
-
-        .form-group {
-            margin-bottom: 19px;
-        }
-
-
-        .form-group label {
-            display: block;
-
-            font-weight: 700;
-
-            color: #123c52;
-
-            margin-bottom: 7px;
-
-            font-size: 14px;
-        }
-
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-
-            padding: 13px 14px;
-
-            border: 1px solid #d4dfe3;
-
-            border-radius: 8px;
-
-            font-family: inherit;
-
-            font-size: 14px;
-
-            outline: none;
-
-            transition: .2s;
-        }
-
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: #147d92;
-
-            box-shadow: 0 0 0 3px rgba(20,125,146,.08);
-        }
-
-
-        .form-group textarea {
-            min-height: 135px;
-
-            resize: vertical;
-        }
-
-
-        .submit-btn {
-            background: #123c52;
-
-            color: #ffffff;
-
-            padding: 13px 28px;
-
-            border-radius: 8px;
-
-            border: none;
-
-            font-weight: 700;
-
-            font-size: 15px;
-
-            cursor: pointer;
-        }
-
-
-        .submit-btn:hover {
-            background: #0e2c3d;
-        }
-
-
-        /* ================= LINKEDIN ================= */
-
-        .linkedin-section {
-            text-align: center;
-
-            background: #eef7fa;
-
-            border: 1px solid #d9eaee;
-
-            padding: 40px 25px;
-
-            border-radius: 18px;
-
-            margin-bottom: 60px;
-        }
-
-
-        .linkedin-section h2 {
-            color: #123c52;
-
-            font-size: 27px;
-
-            margin-bottom: 8px;
-        }
-
-
-        .linkedin-section p {
-            color: #687277;
-
-            font-size: 15px;
-
-            margin-bottom: 20px;
-        }
-
-
-        .linkedin-button {
-            display: inline-block;
-
-            background: #0a66c2;
-
-            color: #ffffff;
-
-            padding: 12px 23px;
-
-            border-radius: 8px;
-
-            font-weight: 700;
-        }
-
-
-        .linkedin-button:hover {
-            background: #084f96;
-        }
-
-
-        /* ================= FOOTER ================= */
-
-        footer {
-            background: #0e2c3d;
-
-            color: #ffffff;
-        }
-
-
-        .footer-inner {
-            max-width: 1200px;
-
-            margin: auto;
-
-            padding: 55px 25px 35px;
-
-            display: grid;
-
-            grid-template-columns: 2fr 1fr 1fr;
-
-            gap: 40px;
-        }
-
-
-        footer h3 {
-            margin-bottom: 18px;
-
-            font-size: 19px;
-
-            position: relative;
-
-            padding-bottom: 12px;
-        }
-
-
-        footer h3::after {
-            content: "";
-
-            position: absolute;
-
-            left: 0;
-
-            bottom: 0;
-
-            width: 40px;
-
-            height: 2px;
-
-            background: #147d92;
-        }
-
-
-        footer p,
-        footer a {
-            color: #b8c8d0;
-
-            font-size: 14px;
-        }
-
-
-        .footer-links a {
-            display: block;
-
-            margin-bottom: 11px;
-
-            transition: .2s;
-        }
-
-
-        .footer-links a:hover {
-            color: #ffffff;
-
-            transform: translateX(3px);
-        }
-
-
-        .copyright {
-            border-top: 1px solid rgba(255,255,255,.15);
-
-            text-align: center;
-
-            padding: 18px;
-
-            font-size: 13px;
-
-            color: #a2b4bc;
-        }
-
-
-        /* ================= MOBILE ================= */
-
-        @media (max-width: 800px) {
-
-            .top-bar {
-                text-align: center;
-            }
-
-
-            nav {
-                gap: 14px;
-            }
-
-
-            .hero {
-                padding: 60px 20px;
-            }
-
-
-            .hero h1 {
-                font-size: 34px;
-            }
-
-
-            .hero p {
-                font-size: 16px;
-            }
-
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-
-            .main-grid {
-                grid-template-columns: 1fr;
-            }
-
-
-            .write-content {
-                grid-template-columns: 1fr;
-            }
-
-
-            .write-box {
-                padding: 30px 25px;
-            }
-
-
-            .form-box,
-            .box {
-                padding: 27px;
-            }
-
-
-            .footer-inner {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-    </style>
 
 </head>
 
-
 <body>
 
-
-<!-- ================= HEADER ================= -->
+<!-- =========================
+     HEADER
+========================== -->
 
 <header>
 
-    <div class="top-bar">
+    <div class="container navbar">
 
-        <div>
+        <a href="index.html" class="logo">
+            Wanderwise <span>Journal</span>
+        </a>
 
-            <div class="logo">
-                Wanderwise Journal
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="destinations.html">Destinations</a>
+
+            <a href="travel-guides.html">Travel Guides</a>
+
+            <a href="itineraries.html">Itineraries</a>
+
+            <a href="travel-tips.html">Travel Tips</a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html" class="active">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <h1>
+            Let's <span>Connect & Collaborate</span>
+        </h1>
+
+        <p>
+            Have a travel question, content idea, collaboration proposal,
+            or simply want to say hello? Get in touch with Wanderwise Journal.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT CARDS
+========================== -->
+
+<section class="contact-cards">
+
+    <div class="container">
+
+        <div class="cards-grid">
+
+            <!-- Email -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    @
+                </div>
+
+                <h3>Email</h3>
+
+                <p>
+                    <a href="mailto:laxmipal1501@gmail.com">
+                        laxmipal1501@gmail.com
+                    </a>
+                </p>
+
             </div>
 
-            <div class="tagline">
-                Travel smarter. Explore further.
+
+            <!-- Phone -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <h3>Phone</h3>
+
+                <p>
+                    <a href="tel:+919718551213">
+                        +91 97185 51213
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- LinkedIn -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    in
+                </div>
+
+                <h3>LinkedIn</h3>
+
+                <p>
+                    <a
+                        href="https://www.linkedin.com/in/laxmipal-seo/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Connect with Laxmi Pal
+                    </a>
+                </p>
+
             </div>
 
         </div>
 
     </div>
 
-
-    <nav>
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="destinations.html">
-            Destinations
-        </a>
-
-        <a href="travel-guides.html">
-            Travel Guides
-        </a>
-
-        <a href="itineraries.html">
-            Itineraries
-        </a>
-
-        <a href="travel-tips.html">
-            Travel Tips
-        </a>
-
-        <a href="blog.html">
-            Blog
-        </a>
-
-        <a href="about.html">
-            About
-        </a>
-
-        <a href="contact.html" class="active">
-            Contact
-        </a>
-
-    </nav>
-
-</header>
+</section>
 
 
+<!-- =========================
+     CONTACT INFORMATION
+========================== -->
 
-<!-- ================= HERO ================= -->
+<section class="main-section">
 
-<section class="hero">
+    <div class="container">
 
-    <span class="hero-label">
-        Contact Wanderwise Journal
-    </span>
-
-
-    <h1>
-        Let's Connect & Collaborate
-    </h1>
+        <div class="two-column">
 
 
-    <p>
-        Have a travel question, story idea, collaboration proposal,
-        guest contribution or feedback? We'd love to hear from you.
-    </p>
+            <!-- Get In Touch -->
+
+            <div class="content-box">
+
+                <div class="section-label">
+                    Get In Touch
+                </div>
+
+                <h2>
+                    We'd Love to Hear From You
+                </h2>
+
+                <p>
+                    Whether you have a question about a destination,
+                    want to share a travel experience, or have an idea
+                    for working together, feel free to reach out.
+                </p>
+
+                <ul class="reason-list">
+
+                    <li>
+                        Travel questions and feedback
+                    </li>
+
+                    <li>
+                        Travel content and story ideas
+                    </li>
+
+                    <li>
+                        Guest article and contributor enquiries
+                    </li>
+
+                    <li>
+                        Travel-related collaborations
+                    </li>
+
+                    <li>
+                        Content partnerships and projects
+                    </li>
+
+                    <li>
+                        Website feedback and suggestions
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Before Contacting -->
+
+            <div class="content-box">
+
+                <div class="section-label">
+                    Before You Contact Us
+                </div>
+
+                <h2>
+                    Let's Make the Conversation Useful
+                </h2>
+
+                <p>
+                    If you are reaching out about a collaboration,
+                    guest article, travel story, or content partnership,
+                    please include enough information for us to understand
+                    your idea.
+                </p>
+
+                <ul class="reason-list">
+
+                    <li>
+                        Tell us briefly about yourself or your brand.
+                    </li>
+
+                    <li>
+                        Share your proposed topic or collaboration idea.
+                    </li>
+
+                    <li>
+                        Include relevant website or social media links
+                        when useful.
+                    </li>
+
+                    <li>
+                        For guest articles, mention the topic you would
+                        like to contribute.
+                    </li>
+
+                    <li>
+                        Please send original and useful content.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
+<!-- =========================
+     WRITE FOR US
+========================== -->
 
-<main class="container">
+<section class="write-section">
 
+    <div class="container">
 
-    <!-- ================= CONTACT CARDS ================= -->
+        <div class="write-box">
 
-    <section class="contact-grid">
-
-
-        <!-- EMAIL -->
-
-        <div class="contact-card">
-
-            <div class="contact-icon">
-                ✉
-            </div>
-
-            <h3>
-                Email
-            </h3>
+            <h2>
+                Write for Wanderwise Journal
+            </h2>
 
             <p>
-                For enquiries, collaborations and contributions.
+                Are you a travel writer, blogger, photographer, traveller,
+                or travel professional with a useful story or travel idea?
+                We welcome relevant contributions that can help readers
+                plan better trips and discover new places.
             </p>
 
-            <a href="mailto:laxmipal1501@gmail.com">
-                laxmipal1501@gmail.com
-            </a>
+
+            <div class="write-grid">
+
+
+                <div class="write-column">
+
+                    <h3>
+                        What We Look For
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Original travel articles and destination stories
+                        </li>
+
+                        <li>
+                            Practical travel guides
+                        </li>
+
+                        <li>
+                            Helpful itineraries and travel experiences
+                        </li>
+
+                        <li>
+                            Travel tips and destination insights
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="write-column">
+
+                    <h3>
+                        Before Submitting
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Content should be original and useful
+                        </li>
+
+                        <li>
+                            Avoid copied or automatically reproduced content
+                        </li>
+
+                        <li>
+                            Focus on genuine travel value for readers
+                        </li>
+
+                        <li>
+                            Include your proposed topic and relevant details
+                        </li>
+
+                    </ul>
+
+                    <a
+                        href="mailto:laxmipal1501@gmail.com?subject=Write%20for%20Wanderwise%20Journal"
+                        class="write-button">
+
+                        Submit Your Idea →
+
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
+    </div>
+
+</section>
 
 
-        <!-- PHONE -->
+<!-- =========================
+     CONTACT FORM
+========================== -->
 
-        <div class="contact-card">
+<section class="form-section">
 
-            <div class="contact-icon">
-                ☎
+    <div class="container">
+
+        <div class="form-wrapper">
+
+
+            <!-- Form Information -->
+
+            <div class="form-info">
+
+                <div class="section-label">
+                    Send a Message
+                </div>
+
+                <h2>
+                    Have Something to Share?
+                </h2>
+
+                <p>
+                    Fill out the form and send us your message.
+                    Your enquiry will be submitted securely through
+                    Formspree.
+                </p>
+
+                <div class="form-note">
+
+                    <strong>Response Information</strong><br>
+
+                    For collaborations, guest contributions and other
+                    enquiries, please provide clear details so we can
+                    understand your request and respond appropriately.
+
+                </div>
+
             </div>
 
-            <h3>
-                Phone
-            </h3>
 
-            <p>
-                For direct enquiries and professional communication.
-            </p>
+            <!-- FORM -->
 
-            <a href="tel:+919718551213">
-                +91 97185 51213
-            </a>
+            <div class="form-box">
+
+                <form
+                    action="https://formspree.io/f/xppwvwdj"
+                    method="POST"
+                >
+
+                    <!-- Name -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Subject -->
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What would you like to discuss?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Message -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Formspree Subject -->
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Contact Message - Wanderwise Journal"
+                    >
+
+
+                    <!-- Redirect -->
+
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://laxmi-seo-marketing.github.io/wanderwise-journal/thank-you.html"
+                    >
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
 
+    </div>
+
+</section>
 
 
-        <!-- LINKEDIN -->
+<!-- =========================
+     LINKEDIN
+========================== -->
 
-        <div class="contact-card">
+<section class="linkedin-section">
 
-            <div class="contact-icon">
-                in
-            </div>
+    <div class="container">
 
-            <h3>
-                LinkedIn
-            </h3>
+        <div class="linkedin-box">
+
+            <h2>
+                Connect With Laxmi Pal
+            </h2>
 
             <p>
-                Connect with Laxmi Pal professionally.
+                Follow my work and connect with me on LinkedIn
+                for SEO, digital marketing and content-related updates.
             </p>
 
             <a
                 href="https://www.linkedin.com/in/laxmipal-seo/"
                 target="_blank"
                 rel="noopener noreferrer"
-            >
+                class="linkedin-btn">
+
                 View LinkedIn Profile
+
             </a>
 
         </div>
 
+    </div>
 
-    </section>
+</section>
 
 
-
-    <!-- ================= CONTACT + INFO ================= -->
-
-    <section class="main-grid">
-
-
-        <div class="box">
-
-            <h2>
-                Get in Touch
-            </h2>
-
-            <p>
-                Wanderwise Journal welcomes genuine questions,
-                travel ideas, feedback and professional collaboration
-                related to travel content and digital publishing.
-            </p>
-
-
-            <h3>
-                What can you contact us about?
-            </h3>
-
-            <ul>
-
-                <li>
-                    Travel questions and feedback
-                </li>
-
-                <li>
-                    Travel content and story ideas
-                </li>
-
-                <li>
-                    Guest article and contributor enquiries
-                </li>
-
-                <li>
-                    Travel-related collaborations
-                </li>
-
-                <li>
-                    Content partnerships and projects
-                </li>
-
-                <li>
-                    Website feedback and suggestions
-                </li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="box">
-
-            <h2>
-                Before You Contact Us
-            </h2>
-
-            <p>
-                Please include enough information about your enquiry
-                so we can understand what you are looking for.
-            </p>
-
-
-            <h3>
-                For collaborations
-            </h3>
-
-            <p>
-                Share your name, organization or website, the nature
-                of the collaboration and any relevant details.
-            </p>
-
-
-            <h3>
-                For travel writing
-            </h3>
-
-            <p>
-                Tell us about your proposed topic, destination,
-                article idea and relevant writing or travel experience.
-            </p>
-
-
-            <h3>
-                Response
-            </h3>
-
-            <p>
-                We review enquiries and respond when possible.
-                Please allow reasonable time for a response.
-            </p>
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- ================= WRITE FOR US ================= -->
-
-    <section class="write-box">
-
-
-        <h2>
-            Write for Wanderwise Journal
-        </h2>
-
-
-        <p>
-            Are you a travel writer, blogger, photographer, traveller
-            or someone with a useful travel story to share?
-            You can contact us with your original travel content ideas.
-        </p>
-
-
-        <div class="write-content">
-
-
-            <div>
-
-                <h3>
-                    What We Look For
-                </h3>
-
-                <ul>
-
-                    <li>
-                        Original travel articles and destination stories
-                    </li>
-
-                    <li>
-                        Practical travel guides and useful trip-planning content
-                    </li>
-
-                    <li>
-                        Detailed itineraries and travel experiences
-                    </li>
-
-                    <li>
-                        Helpful travel tips and destination insights
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <div>
-
-                <h3>
-                    Before Submitting
-                </h3>
-
-                <ul>
-
-                    <li>
-                        Content should be original and useful to readers
-                    </li>
-
-                    <li>
-                        Articles should provide genuine travel value
-                    </li>
-
-                    <li>
-                        Avoid copied or automatically reproduced content
-                    </li>
-
-                    <li>
-                        Include your proposed topic and relevant details
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-        </div>
-
-
-        <a
-            href="mailto:laxmipal1501@gmail.com?subject=Write%20for%20Wanderwise%20Journal"
-            class="write-button"
-        >
-            Submit Your Idea
-        </a>
-
-
-    </section>
-
-
-
-    <!-- ================= CONTACT FORM ================= -->
-
-    <section class="form-box">
-
-
-        <h2>
-            Send Us a Message
-        </h2>
-
-
-        <p class="form-intro">
-            Use the form below to share your question, idea,
-            feedback or collaboration request.
-        </p>
-
-
-        <form
-            action="mailto:laxmipal1501@gmail.com"
-            method="post"
-            enctype="text/plain"
-        >
-
-
-            <div class="form-group">
-
-                <label for="name">
-                    Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="Name"
-                    placeholder="Your name"
-                    required
-                >
-
-            </div>
-
-
-
-            <div class="form-group">
-
-                <label for="email">
-                    Email
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="Email"
-                    placeholder="your@email.com"
-                    required
-                >
-
-            </div>
-
-
-
-            <div class="form-group">
-
-                <label for="subject">
-                    Subject
-                </label>
-
-                <input
-                    type="text"
-                    id="subject"
-                    name="Subject"
-                    placeholder="What would you like to discuss?"
-                    required
-                >
-
-            </div>
-
-
-
-            <div class="form-group">
-
-                <label for="message">
-                    Message
-                </label>
-
-                <textarea
-                    id="message"
-                    name="Message"
-                    placeholder="Write your message here..."
-                    required
-                ></textarea>
-
-            </div>
-
-
-
-            <button
-                type="submit"
-                class="submit-btn"
-            >
-                Send Message
-            </button>
-
-
-        </form>
-
-
-    </section>
-
-
-
-    <!-- ================= LINKEDIN ================= -->
-
-    <section class="linkedin-section">
-
-
-        <h2>
-            Connect With Laxmi Pal
-        </h2>
-
-
-        <p>
-            For professional networking, SEO and Digital Marketing
-            related collaborations, you can also connect with me on LinkedIn.
-        </p>
-
-
-        <a
-            href="https://www.linkedin.com/in/laxmipal-seo/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="linkedin-button"
-        >
-            View LinkedIn Profile
-        </a>
-
-
-    </section>
-
-
-</main>
-
-
-
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
+    <div class="container">
 
-    <div class="footer-inner">
-
-
-        <div>
-
-            <h3>
-                Wanderwise Journal
-            </h3>
-
-            <p>
-                Wanderwise Journal is a travel-focused publication
-                sharing practical destination guides, travel itineraries,
-                useful travel tips and inspiring travel stories.
-            </p>
-
-        </div>
+        <div class="footer-grid">
 
 
+            <!-- About -->
 
-        <div>
+            <div>
 
-            <h3>
-                Categories
-            </h3>
+                <h3>
+                    Wanderwise Journal
+                </h3>
 
-            <div class="footer-links">
+                <p>
+                    Travel destinations, practical guides,
+                    itineraries, travel tips and inspiring ideas
+                    to help you plan better journeys.
+                </p>
 
-                <a href="destinations.html">
-                    Destinations
-                </a>
+            </div>
 
-                <a href="travel-guides.html">
-                    Travel Guides
-                </a>
 
-                <a href="itineraries.html">
-                    Itineraries
-                </a>
+            <!-- Explore -->
 
-                <a href="travel-tips.html">
-                    Travel Tips
-                </a>
+            <div>
 
-                <a href="blog.html">
-                    Blog
-                </a>
+                <h3>
+                    Explore
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="destinations.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="travel-guides.html">
+                            Travel Guides
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="itineraries.html">
+                            Itineraries
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="travel-tips.html">
+                            Travel Tips
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Website -->
+
+            <div>
+
+                <h3>
+                    Website
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="disclaimer.html">
+                            Disclaimer
+                        </a>
+                    </li>
+
+                </ul>
 
             </div>
 
         </div>
 
 
+        <div class="footer-bottom">
 
-        <div>
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <div class="footer-links">
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-                <a href="privacy-policy.html">
-                    Privacy Policy
-                </a>
-
-                <a href="disclaimer.html">
-                    Disclaimer
-                </a>
-
-            </div>
+            © 2026 Wanderwise Journal. All rights reserved.
 
         </div>
 
-
     </div>
-
-
-
-    <div class="copyright">
-
-        © 2026 Wanderwise Journal. All rights reserved.
-
-    </div>
-
 
 </footer>
 
-
 </body>
-
 </html>
