@@ -1,49 +1,673 @@
-<section class="author">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-    <h2>About Laxmi Pal</h2>
+    <title>About Laxmi Pal | SEO Executive & Digital Marketing Professional</title>
+
+    <meta name="description" content="Learn about Laxmi Pal, an SEO Executive with experience in SEO, digital marketing, keyword research, content optimization, social media marketing and website growth strategies.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/wanderwise-journal/about.html">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Laxmi Pal | SEO Executive & Digital Marketing Professional">
+    <meta property="og:description" content="Learn about Laxmi Pal and his experience in SEO, digital marketing, content optimization and website growth.">
+    <meta property="og:url" content="https://laxmi-seo-marketing.github.io/wanderwise-journal/about.html">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Wanderwise Journal">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Laxmi Pal | SEO Executive & Digital Marketing Professional">
+    <meta name="twitter:description" content="Learn about Laxmi Pal, SEO Executive and Digital Marketing professional.">
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="TdyVgjIftetYsRfMSmUZb_QI_Th_SfNd02HdyCS8HjA">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSJSHDVPJ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VSJSHDVPJ0');
+    </script>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #444;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #0a66c2;
+        }
+
+        /* HERO */
+
+        .about-hero {
+            background: linear-gradient(135deg, #eef5ff, #ffffff);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 46px;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .about-hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 19px;
+            color: #666;
+        }
+
+        /* MAIN */
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        /* PROFILE CARD */
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 45px;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 40px;
+            align-items: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+            margin-bottom: 60px;
+        }
+
+        .profile-photo {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0a66c2, #4f9eea);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 60px;
+            font-weight: 700;
+            margin: auto;
+        }
+
+        .profile-content h2 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .designation {
+            color: #0a66c2;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .profile-content p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 22px;
+            background: #0a66c2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .linkedin-btn:hover {
+            background: #084f96;
+            transform: translateY(-2px);
+        }
+
+        /* SECTION */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* SKILLS */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-bottom: 65px;
+        }
+
+        .skill-card {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #eeeeee;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+        }
+
+        .skill-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: #eef5ff;
+            color: #0a66c2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .skill-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* ABOUT TEXT */
+
+        .about-text {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 60px;
+        }
+
+        .about-text h2 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .about-text p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: linear-gradient(135deg, #0a66c2, #164e8b);
+            color: #ffffff;
+            padding: 55px 30px;
+            border-radius: 18px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: auto auto 25px;
+            opacity: 0.95;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: #ffffff;
+            color: #0a66c2;
+            padding: 12px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111;
+            color: #ffffff;
+            padding: 35px 20px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin-right: 18px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .about-hero {
+                padding: 60px 20px;
+            }
+
+            .about-hero h1 {
+                font-size: 34px;
+            }
+
+            .profile-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 30px 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-text {
+                padding: 25px;
+            }
+
+            .cta h2 {
+                font-size: 26px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="nav">
+
+        <a href="index.html" class="logo">
+            Wanderwise Journal
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="travel-guides.html">Travel Guides</a>
+            <a href="itineraries.html">Itineraries</a>
+            <a href="travel-tips.html">Travel Tips</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="about-hero">
+
+    <h1>About Wanderwise Journal</h1>
 
     <p>
-        <strong>My name is Laxmi Pal</strong>, and I am currently working as an
-        <strong>Digital marketing Executive</strong> with a strong interest in Digital Marketing.
-        I am passionate about improving website visibility, increasing organic
-        traffic, and helping businesses grow through effective SEO strategies.
+        Practical travel information, destination inspiration and useful
+        resources for travelers exploring the world.
     </p>
-
-    <p>
-        I have hands-on experience in <strong>On-Page SEO, Off-Page SEO,
-        Keyword Research, and Content Optimization</strong>. I regularly work
-        on website audits, competitor analysis, and implementing SEO techniques
-        to improve search engine rankings.
-    </p>
-
-    <p>
-        I am also skilled in tools like <strong>Google Analytics</strong> and
-        continuously learning the latest SEO trends, algorithm updates, and
-        digital marketing strategies to stay ahead in the industry.
-    </p>
-
-    <p>
-        Along with SEO, I have knowledge of <strong>Social Media Marketing
-        and Content Marketing</strong>, which helps me create a well-rounded
-        digital marketing approach.
-    </p>
-
-    <p>
-        I am always open to learning new things, taking on challenges, and
-        growing as a Digital Marketing professional.
-    </p>
-
-    <p>
-        <strong>Open to opportunities and collaborations in SEO and Digital Marketing.</strong>
-    </p>
-
-    <a
-        href="https://www.linkedin.com/in/laxmipal-seo/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="linkedin-btn"
-    >
-        Connect with Laxmi Pal on LinkedIn
-    </a>
 
 </section>
+
+
+<main class="container">
+
+
+    <!-- PROFILE -->
+
+    <section class="profile-card">
+
+        <div class="profile-photo">
+            LP
+        </div>
+
+        <div class="profile-content">
+
+            <h2>Laxmi Pal</h2>
+
+            <div class="designation">
+                SEO Executive & Digital Marketing Professional
+            </div>
+
+            <p>
+                My name is <strong>Laxmi Pal</strong>, and I am currently
+                working as an SEO Executive with a strong interest in
+                Digital Marketing.
+            </p>
+
+            <p>
+                I am passionate about improving website visibility,
+                increasing organic traffic, and helping businesses grow
+                through effective SEO strategies.
+            </p>
+
+            <a
+                href="https://www.linkedin.com/in/laxmipal-seo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin-btn"
+            >
+                Connect with Laxmi Pal on LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT LAXMI -->
+
+    <section class="about-text">
+
+        <h2>My SEO & Digital Marketing Experience</h2>
+
+        <p>
+            I have hands-on experience in
+            <strong>On-Page SEO, Off-Page SEO, Keyword Research,
+            and Content Optimization.</strong>
+            I regularly work on website audits, competitor analysis,
+            and implementing SEO techniques to improve search engine rankings.
+        </p>
+
+        <p>
+            I am also skilled in tools like
+            <strong>Google Analytics</strong> and continuously learning
+            the latest SEO trends, algorithm updates, and digital marketing
+            strategies to stay ahead in the industry.
+        </p>
+
+        <p>
+            Along with SEO, I have knowledge of
+            <strong>Social Media Marketing and Content Marketing</strong>,
+            which helps me create a well-rounded digital marketing approach.
+        </p>
+
+        <p>
+            I am always open to learning new things, taking on challenges,
+            and growing as a Digital Marketing professional.
+        </p>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>My Skills</h2>
+
+            <p>
+                Areas of SEO and Digital Marketing that I work with.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <div class="skill-icon">SEO</div>
+
+                <h3>On-Page SEO</h3>
+
+                <p>
+                    Website optimization, title tags, meta descriptions,
+                    headings, internal linking and content optimization.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">OFF</div>
+
+                <h3>Off-Page SEO</h3>
+
+                <p>
+                    Link building, profile creation, content promotion
+                    and other off-page SEO activities.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">KW</div>
+
+                <h3>Keyword Research</h3>
+
+                <p>
+                    Finding relevant search terms and building content
+                    strategies around user search intent.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">GA</div>
+
+                <h3>Google Analytics</h3>
+
+                <p>
+                    Understanding website traffic, user behavior and
+                    performance data to support digital marketing decisions.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">SM</div>
+
+                <h3>Social Media Marketing</h3>
+
+                <p>
+                    Creating and supporting social media strategies to
+                    improve online visibility and engagement.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">CM</div>
+
+                <h3>Content Marketing</h3>
+
+                <p>
+                    Creating useful content designed to provide value
+                    to users and support organic search visibility.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WANDERWISE -->
+
+    <section class="about-text">
+
+        <h2>About Wanderwise Journal</h2>
+
+        <p>
+            Wanderwise Journal is a travel-focused website created to
+            share practical travel information, destination guides,
+            useful travel tips and detailed itineraries.
+        </p>
+
+        <p>
+            The goal is to make travel planning easier by bringing useful
+            information together in a simple and accessible format.
+        </p>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            I am open to opportunities, collaborations and professional
+            connections in SEO and Digital Marketing.
+        </p>
+
+        <a
+            href="https://www.linkedin.com/in/laxmipal-seo/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Connect on LinkedIn
+        </a>
+
+    </section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <p>
+            © 2026 Wanderwise Journal. All rights reserved.
+        </p>
+
+        <p style="margin-top: 10px;">
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="privacy-policy.html">Privacy Policy</a>
+
+            <a href="disclaimer.html">Disclaimer</a>
+
+            <a
+                href="https://www.linkedin.com/in/laxmipal-seo/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
