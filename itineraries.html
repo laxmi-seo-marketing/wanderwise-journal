@@ -3,185 +3,858 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Itineraries | Wanderwise Journal</title>
-    <meta name="description" content="Ready-to-follow travel itineraries for popular destinations, from 3-day city trips to longer multi-country journeys.">
+
+    <!-- Primary SEO -->
+    <title>Travel Itineraries | Worldwide Trip Plans & Day-by-Day Guides | Wanderwise Journal</title>
+
+    <meta name="description" content="Explore practical travel itineraries for Paris, Rome, Japan, Lisbon, India and Thailand. Find day-by-day trip plans, city breaks, weekend trips and multi-day travel ideas.">
+
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/itineraries.html">
+
+    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/wanderwise-journal/itineraries.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Travel Itineraries | Worldwide Trip Plans & Day-by-Day Guides">
+    <meta property="og:description" content="Discover practical day-by-day travel itineraries for destinations around the world, including Paris, Rome, Japan, Lisbon, India and Thailand.">
+    <meta property="og:url" content="https://laxmi-seo-marketing.github.io/wanderwise-journal/itineraries.html">
+    <meta property="og:site_name" content="Wanderwise Journal">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travel Itineraries | Worldwide Trip Plans & Day-by-Day Guides">
+    <meta name="twitter:description" content="Plan your next trip with practical day-by-day travel itineraries and destination ideas from Wanderwise Journal.">
+
+    <meta name="theme-color" content="#123c52">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="TdyVgjIftetYsRfMSmUZb_QI_Th_SfNd02HdyCS8HjA">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSJSHDVPJ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSJSHDVPJ0');
+    </script>
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Wanderwise Journal",
+        "url": "https://laxmi-seo-marketing.github.io/wanderwise-journal/",
+        "description": "Travel destinations, travel guides, itineraries and practical travel tips for travelers around the world."
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://laxmi-seo-marketing.github.io/wanderwise-journal/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Travel Itineraries",
+                "item": "https://laxmi-seo-marketing.github.io/wanderwise-journal/itineraries.html"
+            }
+        ]
+    }
+    </script>
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #222; line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        header { border-bottom: 1px solid #e5e5e5; background: #ffffff; position: sticky; top: 0; z-index: 1000; }
-        .top-bar { max-width: 1200px; margin: auto; padding: 20px 25px 15px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
-        .logo { font-size: 28px; font-weight: 800; color: #123c52; }
-        .tagline { color: #777; font-size: 14px; }
-        nav { max-width: 1200px; margin: auto; padding: 0 25px 15px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
-        nav a { font-size: 15px; font-weight: 700; color: #333; }
-        nav a.active, nav a:hover { color: #147d92; }
-        .page-header { max-width: 1200px; margin: 35px auto 10px; padding: 0 25px; }
-        .breadcrumb { font-size: 13px; color: #888; margin-bottom: 15px; }
-        .breadcrumb a { color: #147d92; font-weight: 700; }
-        .page-header h1 { font-size: 42px; color: #123c52; margin-bottom: 12px; }
-        .page-header p { max-width: 700px; color: #555; font-size: 16px; }
-        .filters { max-width: 1200px; margin: 25px auto 0; padding: 0 25px; display: flex; gap: 12px; flex-wrap: wrap; }
-        .filter-tag { border: 1px solid #d5dde0; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 700; color: #123c52; }
-        .filter-tag.active { background: #123c52; color: #ffffff; border-color: #123c52; }
-        .section { max-width: 1200px; margin: 45px auto; padding: 0 25px; }
-        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .card { border: 1px solid #e5e5e5; border-radius: 14px; overflow: hidden; background: #fff; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-        .card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
-        .duration-badge { position: absolute; top: 14px; left: 14px; background: #ffffff; color: #123c52; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 800; }
-        .img-1 { background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"); }
-        .img-2 { background-image: url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=80"); }
-        .img-3 { background-image: url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"); }
-        .img-4 { background-image: url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80"); }
-        .img-5 { background-image: url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"); }
-        .img-6 { background-image: url("https://images.unsplash.com/photo-1555881551-4e70e0dbb489?auto=format&fit=crop&w=900&q=80"); }
-        .card-content { padding: 20px; }
-        .card-category { color: #147d92; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
-        .card h3 { font-size: 20px; line-height: 1.3; margin: 8px 0; color: #123c52; }
-        .card p { font-size: 14px; color: #666; margin-bottom: 12px; }
-        .read-more { color: #123c52; font-weight: 700; font-size: 14px; }
-        footer { margin-top: 70px; background: #0e2c3d; color: #ffffff; }
-        .footer-inner { max-width: 1200px; margin: auto; padding: 55px 25px 35px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
-        footer h3 { margin-bottom: 18px; font-size: 19px; color: #ffffff; position: relative; padding-bottom: 12px; }
-        footer h3::after { content: ""; position: absolute; left: 0; bottom: 0; width: 40px; height: 2px; background: #147d92; }
-        footer p, footer a { color: #b8c8d0; font-size: 14px; }
-        .footer-links a { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; transition: color 0.2s ease, gap 0.2s ease; }
-        .footer-links a::before { content: "▶"; font-size: 9px; color: #147d92; }
-        .footer-links a:hover { color: #ffffff; gap: 11px; }
-        .copyright { border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 18px; font-size: 13px; color: #a2b4bc; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #123c52;
+        }
+
+        .tagline {
+            color: #777;
+            font-size: 14px;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 25px 15px;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #147d92;
+        }
+
+        .page-header {
+            max-width: 1200px;
+            margin: 35px auto 10px;
+            padding: 0 25px;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #147d92;
+            font-weight: 700;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            color: #123c52;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .page-header p {
+            max-width: 780px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .filters {
+            max-width: 1200px;
+            margin: 25px auto 0;
+            padding: 0 25px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .filter-tag {
+            border: 1px solid #d5dde0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #123c52;
+        }
+
+        .filter-tag.active {
+            background: #123c52;
+            color: #ffffff;
+            border-color: #123c52;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 45px auto;
+            padding: 0 25px;
+        }
+
+        .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .section-heading h2 {
+            font-size: 30px;
+            color: #123c52;
+            margin-bottom: 8px;
+        }
+
+        .section-heading p {
+            max-width: 760px;
+            color: #666;
+            font-size: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card-image {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .duration-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: #ffffff;
+            color: #123c52;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-category {
+            color: #147d92;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            line-height: 1.3;
+            margin: 8px 0;
+            color: #123c52;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .read-more {
+            color: #123c52;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .seo-content {
+            max-width: 1200px;
+            margin: 20px auto 60px;
+            padding: 0 25px;
+        }
+
+        .seo-box {
+            background: #f6f9fa;
+            border-radius: 14px;
+            padding: 30px;
+        }
+
+        .seo-box h2 {
+            color: #123c52;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .seo-box h3 {
+            color: #123c52;
+            font-size: 20px;
+            margin: 22px 0 8px;
+        }
+
+        .seo-box p {
+            color: #555;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .seo-box ul {
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .seo-box li {
+            margin-bottom: 7px;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #0e2c3d;
+            color: #ffffff;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 55px 25px 35px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 18px;
+            font-size: 19px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        footer h3::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: #147d92;
+        }
+
+        footer p,
+        footer a {
+            color: #b8c8d0;
+            font-size: 14px;
+        }
+
+        .footer-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            transition: color 0.2s ease, gap 0.2s ease;
+        }
+
+        .footer-links a::before {
+            content: "▶";
+            font-size: 9px;
+            color: #147d92;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            gap: 11px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+            color: #a2b4bc;
+        }
+
         @media (max-width: 800px) {
-            .top-bar { flex-direction: column; text-align: center; }
-            nav { gap: 14px; }
-            .page-header h1 { font-size: 30px; }
-            .cards { grid-template-columns: 1fr; }
-            .footer-inner { grid-template-columns: 1fr; }
+
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                gap: 14px;
+            }
+
+            .page-header h1 {
+                font-size: 30px;
+            }
+
+            .section-heading h2 {
+                font-size: 25px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <div class="top-bar">
-            <div>
-                <div class="logo">Wanderwise Journal</div>
-                <div class="tagline">Travel smarter. Explore further.</div>
-            </div>
+
+<header>
+
+    <div class="top-bar">
+        <div>
+            <div class="logo">Wanderwise Journal</div>
+            <div class="tagline">Travel smarter. Explore further.</div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="destinations.html">Destinations</a>
-            <a href="travel-guides.html">Travel Guides</a>
-            <a href="itineraries.html" class="active">Itineraries</a>
-            <a href="travel-tips.html">Travel Tips</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    </div>
 
-    <main>
-        <section class="page-header">
-            <div class="breadcrumb"><a href="index.html">Home</a> / Itineraries</div>
-            <h1>Travel Itineraries</h1>
-            <p>Ready-to-follow day-by-day plans for popular destinations — so you spend less time planning and more time exploring.</p>
-        </section>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="travel-guides.html">Travel Guides</a>
+        <a href="itineraries.html" class="active">Itineraries</a>
+        <a href="travel-tips.html">Travel Tips</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-        <div class="filters">
-            <span class="filter-tag active">All Itineraries</span>
-            <span class="filter-tag">Weekend Trips</span>
-            <span class="filter-tag">City Breaks</span>
-            <span class="filter-tag">Multi-Country</span>
+</header>
+
+
+<main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> /
+            <span>Travel Itineraries</span>
         </div>
 
-        <section class="section">
-            <div class="cards">
-                <article class="card">
-                    <div class="card-image img-1"><span class="duration-badge">3 Days</span></div>
-                    <div class="card-content">
-                        <div class="card-category">City Break</div>
-                        <h3>3-Day Paris Itinerary</h3>
-                        <p>From the Louvre to Montmartre, a realistic plan to see the best of Paris in 3 days.</p>
-                        <a class="read-more" href="blog.html">View Itinerary →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image img-2"><span class="duration-badge">5 Days</span></div>
-                    <div class="card-content">
-                        <div class="card-category">City Break</div>
-                        <h3>5 Days in Rome and the Amalfi Coast</h3>
-                        <p>Split your trip between Rome's history and the coastal beauty of Amalfi.</p>
-                        <a class="read-more" href="blog.html">View Itinerary →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image img-3"><span class="duration-badge">7 Days</span></div>
-                    <div class="card-content">
-                        <div class="card-category">Multi-Country</div>
-                        <h3>7-Day Japan First-Timer Itinerary</h3>
-                        <p>Tokyo, Kyoto and Osaka covered at a comfortable pace for first-time visitors.</p>
-                        <a class="read-more" href="blog.html">View Itinerary →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image img-4"><span class="duration-badge">4 Days</span></div>
-                    <div class="card-content">
-                        <div class="card-category">Weekend Trip</div>
-                        <h3>4 Days in Lisbon and Sintra</h3>
-                        <p>A relaxed plan to explore Lisbon's streets and Sintra's fairytale palaces.</p>
-                        <a class="read-more" href="blog.html">View Itinerary →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image img-5"><span class="duration-badge">10 Days</span></div>
-                    <div class="card-content">
-                        <div class="card-category">Multi-Country</div>
-                        <h3>10-Day Golden Triangle Tour, India</h3>
-                        <p>Delhi, Agra and Jaipur — India's classic first-time travel route.</p>
-                        <a class="read-more" href="blog.html">View Itinerary →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image img-6"><span class="duration-badge">6 Days</span></div>
-                    <div class="card-content">
-                        <div class="card-category">City Break</div>
-                        <h3>6 Days in Bangkok and the Islands</h3>
-                        <p>City energy followed by island time — a balanced Thailand itinerary.</p>
-                        <a class="read-more" href="blog.html">View Itinerary →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+        <h1>Travel Itineraries & Day-by-Day Trip Plans</h1>
 
-    <footer>
-        <div class="footer-inner">
-            <div>
-                <h3>Wanderwise Journal</h3>
-                <p>At Wanderwise Journal, we believe travel should be simple, thoughtful and inspiring. From destination ideas to practical guides, we help you plan your next adventure with confidence.</p>
-            </div>
-            <div>
-                <h3>Categories</h3>
-                <div class="footer-links">
-                    <a href="destinations.html">Destinations</a>
-                    <a href="travel-guides.html">Travel Guides</a>
-                    <a href="itineraries.html">Itineraries</a>
-                    <a href="travel-tips.html">Travel Tips</a>
-                    <a href="blog.html">Blog</a>
+        <p>
+            Explore practical travel itineraries for destinations around the world.
+            Discover day-by-day trip plans, city breaks, weekend trips and multi-day
+            travel ideas designed to help you plan your journey with confidence.
+        </p>
+
+    </section>
+
+
+    <!-- Itinerary Categories -->
+    <div class="filters">
+
+        <span class="filter-tag active">All Itineraries</span>
+        <span class="filter-tag">Weekend Trips</span>
+        <span class="filter-tag">City Breaks</span>
+        <span class="filter-tag">Multi-Day Trips</span>
+
+    </div>
+
+
+    <!-- Main Itineraries -->
+    <section class="section">
+
+        <div class="section-heading">
+
+            <h2>Popular Travel Itineraries Around the World</h2>
+
+            <p>
+                Find easy-to-follow travel plans for some of the world's most popular
+                destinations, from European city breaks to first-time trips across Asia.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <!-- Paris -->
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                        alt="Paris France travel itinerary and Eiffel Tower"
+                        loading="lazy"
+                    >
+
+                    <span class="duration-badge">3 Days</span>
+
                 </div>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="disclaimer.html">Disclaimer</a>
+
+                <div class="card-content">
+
+                    <div class="card-category">City Break</div>
+
+                    <h3>3-Day Paris Itinerary</h3>
+
+                    <p>
+                        Plan three days in Paris with a practical route covering
+                        the Louvre, Eiffel Tower, Montmartre and other popular attractions.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Read the 3-Day Paris travel itinerary"
+                    >
+                        View Paris Itinerary →
+                    </a>
+
                 </div>
-            </div>
+
+            </article>
+
+
+            <!-- Rome -->
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=80"
+                        alt="Rome Italy travel itinerary and Colosseum"
+                        loading="lazy"
+                    >
+
+                    <span class="duration-badge">5 Days</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-category">Italy Trip</div>
+
+                    <h3>5-Day Rome & Amalfi Coast Itinerary</h3>
+
+                    <p>
+                        Combine Rome's historic attractions with the scenic Amalfi Coast
+                        in a practical five-day Italy travel itinerary.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Read the 5-Day Rome and Amalfi Coast itinerary"
+                    >
+                        View Italy Itinerary →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Japan -->
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+                        alt="Japan travel itinerary for Tokyo Kyoto and Osaka"
+                        loading="lazy"
+                    >
+
+                    <span class="duration-badge">7 Days</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-category">First-Time Travel</div>
+
+                    <h3>7-Day Japan First-Time Itinerary</h3>
+
+                    <p>
+                        Explore Tokyo, Kyoto and Osaka with a balanced seven-day
+                        Japan itinerary created for first-time international visitors.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Read the 7-Day Japan itinerary for first-time visitors"
+                    >
+                        View Japan Itinerary →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Lisbon -->
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80"
+                        alt="Lisbon Portugal travel itinerary and Sintra trip"
+                        loading="lazy"
+                    >
+
+                    <span class="duration-badge">4 Days</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-category">Weekend Trip</div>
+
+                    <h3>4-Day Lisbon & Sintra Itinerary</h3>
+
+                    <p>
+                        Discover Lisbon's historic streets and plan a day trip to
+                        Sintra with this relaxed four-day Portugal itinerary.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Read the 4-Day Lisbon and Sintra itinerary"
+                    >
+                        View Portugal Itinerary →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- India -->
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+                        alt="India Golden Triangle travel itinerary Delhi Agra Jaipur"
+                        loading="lazy"
+                    >
+
+                    <span class="duration-badge">10 Days</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-category">India Travel</div>
+
+                    <h3>10-Day Golden Triangle India Itinerary</h3>
+
+                    <p>
+                        Explore Delhi, Agra and Jaipur with a practical India
+                        Golden Triangle itinerary for first-time international travelers.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Read the 10-Day Golden Triangle India itinerary"
+                    >
+                        View India Itinerary →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Thailand -->
+            <article class="card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555881551-4e70e0dbb489?auto=format&fit=crop&w=900&q=80"
+                        alt="Thailand Bangkok and islands travel itinerary"
+                        loading="lazy"
+                    >
+
+                    <span class="duration-badge">6 Days</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-category">Thailand Trip</div>
+
+                    <h3>6-Day Bangkok & Islands Itinerary</h3>
+
+                    <p>
+                        Combine Bangkok sightseeing with relaxing island time
+                        in this practical six-day Thailand travel itinerary.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Read the 6-Day Bangkok and Islands itinerary"
+                    >
+                        View Thailand Itinerary →
+                    </a>
+
+                </div>
+
+            </article>
+
+
         </div>
-        <div class="copyright">© 2026 Wanderwise Journal. All rights reserved.</div>
-    </footer>
+
+    </section>
+
+
+    <!-- SEO Supporting Content -->
+    <section class="seo-content">
+
+        <div class="seo-box">
+
+            <h2>How to Choose the Right Travel Itinerary</h2>
+
+            <p>
+                A good travel itinerary helps you make the most of your time while
+                leaving enough flexibility to enjoy the destination. Before choosing
+                a trip plan, consider how many days you have, the places you want to
+                visit, your travel style and the amount of time needed for transportation.
+            </p>
+
+            <h3>Short City Break Itineraries</h3>
+
+            <p>
+                Short itineraries are useful for travelers planning a weekend getaway
+                or a quick city break. A three- or four-day itinerary can focus on
+                major attractions, neighborhoods, local food and a few memorable experiences.
+            </p>
+
+            <h3>Multi-Day International Itineraries</h3>
+
+            <p>
+                Longer trips allow travelers to explore several destinations at a
+                comfortable pace. Our travel itinerary ideas include European trips,
+                Japan, Thailand and India, helping international travelers understand
+                how destinations can be combined into one journey.
+            </p>
+
+            <h3>Plan Your Trip With Wanderwise Journal</h3>
+
+            <p>
+                Use our
+                <a href="destinations.html" style="color:#147d92;font-weight:700;">
+                    destination guides
+                </a>
+                to discover places worth visiting, explore our
+                <a href="travel-guides.html" style="color:#147d92;font-weight:700;">
+                    travel guides
+                </a>
+                for practical planning information, and check our
+                <a href="travel-tips.html" style="color:#147d92;font-weight:700;">
+                    travel tips
+                </a>
+                for useful advice before and during your trip.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+
+            <h3>Wanderwise Journal</h3>
+
+            <p>
+                Wanderwise Journal helps travelers discover destinations,
+                plan trips and explore the world with practical travel guides,
+                itineraries and useful travel tips.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Categories</h3>
+
+            <div class="footer-links">
+
+                <a href="destinations.html">Destinations</a>
+                <a href="travel-guides.html">Travel Guides</a>
+                <a href="itineraries.html">Itineraries</a>
+                <a href="travel-tips.html">Travel Tips</a>
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Wanderwise Journal. All rights reserved.
+    </div>
+
+</footer>
+
 </body>
 </html>
