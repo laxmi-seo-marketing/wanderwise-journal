@@ -1,185 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations | Wanderwise Journal</title>
-    <meta name="description" content="Explore travel destinations across Asia, Europe and beyond. Discover countries and cities worth visiting with Wanderwise Journal.">
+
+    <!-- SEO Title -->
+    <title>Travel Destinations | Explore Places Around the World | Wanderwise Journal</title>
+
+    <!-- SEO Description -->
+    <meta name="description" content="Explore travel destinations around the world with destination guides, places to visit, things to do, travel tips and useful trip information from Wanderwise Journal.">
+
+    <!-- Search Engine Instructions -->
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/destinations.html">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/wanderwise-journal/destinations.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Travel Destinations | Wanderwise Journal">
+    <meta property="og:description" content="Explore travel destinations, places to visit, things to do and useful destination information with Wanderwise Journal.">
+    <meta property="og:url" content="https://laxmi-seo-marketing.github.io/wanderwise-journal/destinations.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Wanderwise Journal">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travel Destinations | Wanderwise Journal">
+    <meta name="twitter:description" content="Explore destinations around the world with practical travel guides, places to visit and useful trip information.">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#123c52">
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Wanderwise Journal",
+        "url": "https://laxmi-seo-marketing.github.io/wanderwise-journal/",
+        "description": "Travel destinations, travel guides, itineraries and practical travel tips."
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://laxmi-seo-marketing.github.io/wanderwise-journal/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Destinations",
+                "item": "https://laxmi-seo-marketing.github.io/wanderwise-journal/destinations.html"
+            }
+        ]
+    }
+    </script>
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #222; line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        header { border-bottom: 1px solid #e5e5e5; background: #ffffff; position: sticky; top: 0; z-index: 1000; }
-        .top-bar { max-width: 1200px; margin: auto; padding: 20px 25px 15px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
-        .logo { font-size: 28px; font-weight: 800; color: #123c52; }
-        .tagline { color: #777; font-size: 14px; }
-        nav { max-width: 1200px; margin: auto; padding: 0 25px 15px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
-        nav a { font-size: 15px; font-weight: 700; color: #333; }
-        nav a.active, nav a:hover { color: #147d92; }
-        .page-header { max-width: 1200px; margin: 35px auto 10px; padding: 0 25px; }
-        .breadcrumb { font-size: 13px; color: #888; margin-bottom: 15px; }
-        .breadcrumb a { color: #147d92; font-weight: 700; }
-        .page-header h1 { font-size: 42px; color: #123c52; margin-bottom: 12px; }
-        .page-header p { max-width: 700px; color: #555; font-size: 16px; }
-        .section { max-width: 1200px; margin: 45px auto; padding: 0 25px; }
-        .section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 2px solid #123c52; padding-bottom: 12px; }
-        .section-heading h2 { font-size: 26px; color: #123c52; }
-        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .card { border: 1px solid #e5e5e5; border-radius: 14px; overflow: hidden; background: #fff; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-        .card-image { height: 200px; background-size: cover; background-position: center; }
-        .india { background-image: url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"); }
-        .italy { background-image: url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=80"); }
-        .france { background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"); }
-        .japan { background-image: url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"); }
-        .thailand { background-image: url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80"); }
-        .portugal { background-image: url("https://images.unsplash.com/photo-1555881551-4e70e0dbb489?auto=format&fit=crop&w=900&q=80"); }
-        .card-content { padding: 20px; }
-        .card-category { color: #147d92; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
-        .card h3 { font-size: 21px; line-height: 1.3; margin: 8px 0; color: #123c52; }
-        .card p { font-size: 14px; color: #666; margin-bottom: 12px; }
-        .read-more { color: #123c52; font-weight: 700; font-size: 14px; }
-        footer { margin-top: 70px; background: #0e2c3d; color: #ffffff; }
-        .footer-inner { max-width: 1200px; margin: auto; padding: 55px 25px 35px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
-        footer h3 { margin-bottom: 18px; font-size: 19px; color: #ffffff; position: relative; padding-bottom: 12px; }
-        footer h3::after { content: ""; position: absolute; left: 0; bottom: 0; width: 40px; height: 2px; background: #147d92; }
-        footer p, footer a { color: #b8c8d0; font-size: 14px; }
-        .footer-links a { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; transition: color 0.2s ease, gap 0.2s ease; }
-        .footer-links a::before { content: "▶"; font-size: 9px; color: #147d92; }
-        .footer-links a:hover { color: #ffffff; gap: 11px; }
-        .copyright { border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 18px; font-size: 13px; color: #a2b4bc; }
-        @media (max-width: 800px) {
-            .top-bar { flex-direction: column; text-align: center; }
-            nav { gap: 14px; }
-            .page-header h1 { font-size: 30px; }
-            .cards { grid-template-columns: 1fr; }
-            .footer-inner { grid-template-columns: 1fr; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #123c52;
+        }
+
+        .tagline {
+            color: #777;
+            font-size: 14px;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 25px 15px;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #147d92;
+        }
+
+        .page-header {
+            max-width: 1200px;
+            margin: 35px auto 10px;
+            padding: 0 25px;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #147d92;
+            font-weight: 700;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            color: #123c52;
+            margin-bottom: 12px;
+        }
+
+        .page-header p {
+            max-width: 780px;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 45px auto;
+            padding: 0 25px;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #123c52;
+            padding-bottom: 12px;
+        }
+
+        .section-heading h2 {
+            font-size: 28px;
+            color: #123c52;
+        }
+
+        .section-intro {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 25px;
+            max-width: 800px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-category {
+            color: #147d92;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            line-height: 1.3;
+            margin: 8px 0;
+            color: #123c52;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 14px;
+        }
+
+        .read-more {
+            color: #123c52;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .read-more:hover {
+            color: #147d92;
+        }
+
+        .seo-intro {
+            max-width: 1200px;
+            margin: 20px auto 50px;
+            padding: 0 25px;
+        }
+
+        .seo-intro h2 {
+            color: #123c52;
+            font-size: 27px;
+            margin-bottom: 12px;
+        }
+
+        .seo-intro p {
+            color: #555;
+            font-size: 16px;
+            max-width: 900px;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #0e2c3d;
+            color: #ffffff;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 55px 25px 35px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 18px;
+            font-size: 19px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        footer h3::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: #147d92;
+        }
+
+        footer p,
+        footer a {
+            color: #b8c8d0;
+            font-size: 14px;
+        }
+
+        .footer-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            transition: color 0.2s ease, gap 0.2s ease;
+        }
+
+        .footer-links a::before {
+            content: "▶";
+            font-size: 9px;
+            color: #147d92;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            gap: 11px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+            color: #a2b4bc;
+        }
+
+        @media (max-width: 800px) {
+
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                gap: 14px;
+            }
+
+            .page-header h1 {
+                font-size: 30px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
     </style>
+
 </head>
+
 <body>
-    <header>
-        <div class="top-bar">
-            <div>
-                <div class="logo">Wanderwise Journal</div>
-                <div class="tagline">Travel smarter. Explore further.</div>
-            </div>
+
+<header>
+
+    <div class="top-bar">
+
+        <div>
+            <div class="logo">Wanderwise Journal</div>
+            <div class="tagline">Travel smarter. Explore further.</div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="destinations.html" class="active">Destinations</a>
-            <a href="travel-guides.html">Travel Guides</a>
-            <a href="itineraries.html">Itineraries</a>
-            <a href="travel-tips.html">Travel Tips</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="page-header">
-            <div class="breadcrumb"><a href="index.html">Home</a> / Destinations</div>
-            <h1>Explore Destinations</h1>
-            <p>From ancient temples to modern cities, discover countries worth adding to your travel list. Handpicked destinations with practical guides to help you plan better.</p>
-        </section>
+    </div>
 
-        <section class="section">
-            <div class="section-heading"><h2>Asia</h2></div>
-            <div class="cards">
-                <article class="card">
-                    <div class="card-image india"></div>
-                    <div class="card-content">
-                        <div class="card-category">India</div>
-                        <h3>Colors, Culture and Chaos That Works</h3>
-                        <p>From the Himalayas to tropical coastlines, India offers an unmatched variety of experiences.</p>
-                        <a class="read-more" href="blog.html">Explore India →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image japan"></div>
-                    <div class="card-content">
-                        <div class="card-category">Japan</div>
-                        <h3>Where Tradition Meets the Future</h3>
-                        <p>Temples, bullet trains and neon-lit streets — Japan blends old and new like nowhere else.</p>
-                        <a class="read-more" href="blog.html">Explore Japan →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image thailand"></div>
-                    <div class="card-content">
-                        <div class="card-category">Thailand</div>
-                        <h3>Islands, Street Food and Warm Welcomes</h3>
-                        <p>A favorite for first-time travelers, with beaches, temples and unforgettable food.</p>
-                        <a class="read-more" href="blog.html">Explore Thailand →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <nav>
 
-        <section class="section">
-            <div class="section-heading"><h2>Europe</h2></div>
-            <div class="cards">
-                <article class="card">
-                    <div class="card-image italy"></div>
-                    <div class="card-content">
-                        <div class="card-category">Italy</div>
-                        <h3>Art, History and Food Worth the Trip</h3>
-                        <p>From Rome's ruins to Tuscany's countryside, Italy rewards slow, thoughtful travel.</p>
-                        <a class="read-more" href="blog.html">Explore Italy →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image france"></div>
-                    <div class="card-content">
-                        <div class="card-category">France</div>
-                        <h3>More Than Just the Eiffel Tower</h3>
-                        <p>Charming villages, coastal towns and world-class museums make France endlessly explorable.</p>
-                        <a class="read-more" href="blog.html">Explore France →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image portugal"></div>
-                    <div class="card-content">
-                        <div class="card-category">Portugal</div>
-                        <h3>Europe's Underrated Coastal Gem</h3>
-                        <p>Affordable, scenic and full of character — Portugal is easy to fall in love with.</p>
-                        <a class="read-more" href="blog.html">Explore Portugal →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+        <a href="index.html">Home</a>
 
-    <footer>
-        <div class="footer-inner">
-            <div>
-                <h3>Wanderwise Journal</h3>
-                <p>At Wanderwise Journal, we believe travel should be simple, thoughtful and inspiring. From destination ideas to practical guides, we help you plan your next adventure with confidence.</p>
-            </div>
-            <div>
-                <h3>Categories</h3>
-                <div class="footer-links">
-                    <a href="destinations.html">Destinations</a>
-                    <a href="travel-guides.html">Travel Guides</a>
-                    <a href="itineraries.html">Itineraries</a>
-                    <a href="travel-tips.html">Travel Tips</a>
-                    <a href="blog.html">Blog</a>
-                </div>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="disclaimer.html">Disclaimer</a>
-                </div>
-            </div>
+        <a href="destinations.html" class="active">
+            Destinations
+        </a>
+
+        <a href="travel-guides.html">
+            Travel Guides
+        </a>
+
+        <a href="itineraries.html">
+            Itineraries
+        </a>
+
+        <a href="travel-tips.html">
+            Travel Tips
+        </a>
+
+        <a href="blog.html">
+            Blog
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- Breadcrumb + H1 -->
+
+    <section class="page-header">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> /
+            Destinations
         </div>
-        <div class="copyright">© 2026 Wanderwise Journal. All rights reserved.</div>
-    </footer>
+
+        <h1>
+            Explore Travel Destinations Around the World
+        </h1>
+
+        <p>
+            Discover inspiring travel destinations across Asia, Europe and beyond.
+            Explore places to visit, things to do, travel ideas and useful destination
+            information to help you plan your next trip.
+        </p>
+
+    </section>
+
+
+    <!-- Asia -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <h2>Asia Travel Destinations</h2>
+        </div>
+
+        <p class="section-intro">
+            Explore popular destinations across Asia with travel inspiration,
+            destination guides, places to visit and practical information for
+            planning your trip.
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- India -->
+
+            <article class="card">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+                    alt="India travel destination and famous landmarks"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+
+                    <div class="card-category">
+                        Asia
+                    </div>
+
+                    <h3>
+                        India Travel Destinations
+                    </h3>
+
+                    <p>
+                        Discover India's diverse travel destinations, from the
+                        Himalayas and historic cities to beaches, cultural sites
+                        and scenic landscapes.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Explore India travel articles"
+                    >
+                        Explore India Travel Articles →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Japan -->
+
+            <article class="card">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+                    alt="Japan travel destination with traditional architecture"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+
+                    <div class="card-category">
+                        Asia
+                    </div>
+
+                    <h3>
+                        Japan Travel Destinations
+                    </h3>
+
+                    <p>
+                        Explore Japan's temples, cities, cultural attractions,
+                        scenic landscapes and unique travel experiences.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Explore Japan travel articles"
+                    >
+                        Explore Japan Travel Articles →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Thailand -->
+
+            <article class="card">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80"
+                    alt="Thailand tropical beach travel destination"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+
+                    <div class="card-category">
+                        Asia
+                    </div>
+
+                    <h3>
+                        Thailand Travel Destinations
+                    </h3>
+
+                    <p>
+                        Discover Thailand's beaches, islands, temples, cities,
+                        local food and popular places to explore.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Explore Thailand travel articles"
+                    >
+                        Explore Thailand Travel Articles →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Europe -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <h2>Europe Travel Destinations</h2>
+        </div>
+
+        <p class="section-intro">
+            Discover European destinations known for history, culture, architecture,
+            food, coastlines and memorable travel experiences.
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- Italy -->
+
+            <article class="card">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=80"
+                    alt="Italy travel destination and historic architecture"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+
+                    <div class="card-category">
+                        Europe
+                    </div>
+
+                    <h3>
+                        Italy Travel Destinations
+                    </h3>
+
+                    <p>
+                        Explore Italy's historic cities, famous landmarks,
+                        countryside, art, architecture and food experiences.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Explore Italy travel articles"
+                    >
+                        Explore Italy Travel Articles →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- France -->
+
+            <article class="card">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                    alt="Paris France travel destination and Eiffel Tower"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+
+                    <div class="card-category">
+                        Europe
+                    </div>
+
+                    <h3>
+                        France Travel Destinations
+                    </h3>
+
+                    <p>
+                        Discover France through historic cities, charming villages,
+                        museums, coastal destinations and cultural attractions.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Explore France travel articles"
+                    >
+                        Explore France Travel Articles →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Portugal -->
+
+            <article class="card">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1555881551-4e70e0dbb489?auto=format&fit=crop&w=900&q=80"
+                    alt="Portugal coastal travel destination"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+
+                    <div class="card-category">
+                        Europe
+                    </div>
+
+                    <h3>
+                        Portugal Travel Destinations
+                    </h3>
+
+                    <p>
+                        Explore Portugal's coastal towns, historic streets,
+                        scenic landscapes, culture and relaxed travel experiences.
+                    </p>
+
+                    <a
+                        class="read-more"
+                        href="blog.html"
+                        title="Explore Portugal travel articles"
+                    >
+                        Explore Portugal Travel Articles →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEO Supporting Content -->
+
+    <section class="seo-intro">
+
+        <h2>
+            Find Travel Inspiration for Your Next Trip
+        </h2>
+
+        <p>
+            Wanderwise Journal brings together travel destinations, destination
+            guides, itineraries and practical travel tips to help you discover
+            new places and plan your journeys. Browse destinations by region,
+            explore travel guides and find useful information before you travel.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+
+        <div>
+
+            <h3>
+                Wanderwise Journal
+            </h3>
+
+            <p>
+                Wanderwise Journal helps curious travelers discover destinations,
+                explore travel guides, plan itineraries and find practical travel
+                tips for their next adventure.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Travel Categories
+            </h3>
+
+            <div class="footer-links">
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="travel-guides.html">
+                    Travel Guides
+                </a>
+
+                <a href="itineraries.html">
+                    Itineraries
+                </a>
+
+                <a href="travel-tips.html">
+                    Travel Tips
+                </a>
+
+                <a href="blog.html">
+                    Travel Blog
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About Wanderwise Journal
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="disclaimer.html">
+                    Disclaimer
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Wanderwise Journal. All rights reserved.
+    </div>
+
+</footer>
+
+
 </body>
 </html>
