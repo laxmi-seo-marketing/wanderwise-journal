@@ -2,212 +2,1349 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderwise Journal | Travel Guides, Itineraries & Travel Tips</title>
-    <meta name="description" content="Explore inspiring destinations, practical travel guides, detailed itineraries and useful travel tips for curious travelers around the world.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/wanderwise-journal/">
-    <meta name="google-site-verification" content="TdyVgjIftetYsRfMSmUZb_QI_Th_SfNd02HdyCS8HjA" />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSJSHDVPJ0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VSJSHDVPJ0');
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #222; line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        header { border-bottom: 1px solid #e5e5e5; background: #ffffff; position: sticky; top: 0; z-index: 1000; }
-        .top-bar { max-width: 1200px; margin: auto; padding: 20px 25px 15px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
-        .logo { font-size: 28px; font-weight: 800; color: #123c52; }
-        .tagline { color: #777; font-size: 14px; }
-        nav { max-width: 1200px; margin: auto; padding: 0 25px 15px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
-        nav a { font-size: 15px; font-weight: 700; color: #333; }
-        nav a.active, nav a:hover { color: #147d92; }
-        .hero { max-width: 1200px; margin: 35px auto; padding: 0 25px; }
-        .hero-box { min-height: 430px; border-radius: 18px; padding: 60px; display: flex; align-items: flex-end;
-            background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.05)),
-            url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85") center/cover; color: white; }
-        .hero-content { max-width: 650px; }
-        .category { display: inline-block; background: #ffffff; color: #123c52; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; margin-bottom: 15px; }
-        .hero h1 { font-size: 48px; line-height: 1.15; margin-bottom: 15px; }
-        .hero p { font-size: 17px; color: #f4f4f4; margin-bottom: 20px; }
-        .btn { display: inline-block; background: #ffffff; color: #123c52; padding: 11px 20px; border-radius: 8px; font-weight: 700; }
-        .btn:hover { background: #e9f5f7; }
-        .section { max-width: 1200px; margin: 60px auto; padding: 0 25px; }
-        .section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 2px solid #123c52; padding-bottom: 12px; }
-        .section-heading h2 { font-size: 30px; color: #123c52; }
-        .section-heading a { color: #147d92; font-weight: 700; font-size: 14px; }
-        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .card { border: 1px solid #e5e5e5; border-radius: 14px; overflow: hidden; background: #fff; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-        .card-image { height: 220px; background-size: cover; background-position: center; }
-        .image-1 { background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"); }
-        .image-2 { background-image: url("https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=80"); }
-        .image-3 { background-image: url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"); }
-        .card-content { padding: 20px; }
-        .card-category { color: #147d92; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
-        .card h3 { font-size: 21px; line-height: 1.3; margin: 8px 0; color: #123c52; }
-        .card p { font-size: 14px; color: #666; margin-bottom: 12px; }
-        .read-more { color: #123c52; font-weight: 700; font-size: 14px; }
-        .intro { background: #f5f8f8; border-radius: 16px; padding: 45px; text-align: center; }
-        .intro h2 { font-size: 32px; margin-bottom: 12px; color: #123c52; }
-        .intro p { max-width: 760px; margin: auto; color: #555; }
-        footer { margin-top: 70px; background: #0e2c3d; color: #ffffff; }
-        .footer-inner { max-width: 1200px; margin: auto; padding: 55px 25px 35px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
-        footer h3 { margin-bottom: 18px; font-size: 19px; color: #ffffff; position: relative; padding-bottom: 12px; }
-        footer h3::after { content: ""; position: absolute; left: 0; bottom: 0; width: 40px; height: 2px; background: #147d92; }
-        footer p, footer a { color: #b8c8d0; font-size: 14px; }
-        .footer-links a { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; transition: color 0.2s ease, gap 0.2s ease; }
-        .footer-links a::before { content: "▶"; font-size: 9px; color: #147d92; }
-        .footer-links a:hover { color: #ffffff; gap: 11px; }
-        .copyright { border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 18px; font-size: 13px; color: #a2b4bc; }
-        @media (max-width: 800px) {
-            .top-bar { flex-direction: column; text-align: center; }
-            nav { gap: 14px; }
-            .hero-box { padding: 35px 25px; min-height: 400px; }
-            .hero h1 { font-size: 34px; }
-            .cards { grid-template-columns: 1fr; }
-            .footer-inner { grid-template-columns: 1fr; }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wanderwise Journal | Travel Guides, Destinations & Itineraries</title>
+
+    <meta name="description" content="Explore travel destinations, practical travel guides, detailed itineraries and useful travel tips with Wanderwise Journal. Plan your next trip with helpful travel information and ideas.">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://laxmi-seo-marketing.github.io/wanderwise-journal/">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="TdyVgjIftetYsRfMSmUZb_QI_Th_SfNd02HdyCS8HjA" />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSJSHDVPJ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
         }
+
+        gtag('js', new Date());
+        gtag('config', 'G-VSJSHDVPJ0');
+    </script>
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wanderwise Journal | Travel Guides, Destinations & Itineraries">
+    <meta property="og:description" content="Explore travel destinations, practical travel guides, detailed itineraries and useful travel tips with Wanderwise Journal.">
+    <meta property="og:url" content="https://laxmi-seo-marketing.github.io/wanderwise-journal/">
+    <meta property="og:site_name" content="Wanderwise Journal">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wanderwise Journal | Travel Guides, Destinations & Itineraries">
+    <meta name="twitter:description" content="Explore travel destinations, travel guides, itineraries and practical travel tips with Wanderwise Journal.">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#123c52">
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Wanderwise Journal",
+        "url": "https://laxmi-seo-marketing.github.io/wanderwise-journal/",
+        "description": "Travel destinations, travel guides, itineraries and practical travel tips."
+    }
+    </script>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 25px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #123c52;
+        }
+
+        .tagline {
+            color: #777;
+            font-size: 14px;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 25px 15px;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #147d92;
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 35px auto;
+            padding: 0 25px;
+        }
+
+        .hero-box {
+            min-height: 430px;
+            border-radius: 18px;
+            padding: 60px;
+            display: flex;
+            align-items: flex-end;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.05)
+                ),
+                url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85")
+                center/cover;
+
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .category {
+            display: inline-block;
+            background: #ffffff;
+            color: #123c52;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.15;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            max-width: 650px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #123c52;
+            padding: 11px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
+        .btn:hover {
+            background: #e9f5f7;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #123c52;
+            padding-bottom: 12px;
+        }
+
+        .section-heading h2 {
+            font-size: 30px;
+            color: #123c52;
+        }
+
+        .section-heading a {
+            color: #147d92;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff;
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card-image {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-category {
+            color: #147d92;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            line-height: 1.3;
+            margin: 8px 0;
+            color: #123c52;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .read-more {
+            color: #123c52;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .read-more:hover {
+            color: #147d92;
+        }
+
+        .intro {
+            background: #f5f8f8;
+            border-radius: 16px;
+            padding: 45px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: #123c52;
+        }
+
+        .intro p {
+            max-width: 800px;
+            margin: auto;
+            color: #555;
+        }
+
+        .topic-card {
+            min-height: 200px;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #0e2c3d;
+            color: #ffffff;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 55px 25px 35px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 18px;
+            font-size: 19px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        footer h3::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: #147d92;
+        }
+
+        footer p,
+        footer a {
+            color: #b8c8d0;
+            font-size: 14px;
+        }
+
+        .footer-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            transition:
+                color 0.2s ease,
+                gap 0.2s ease;
+        }
+
+        .footer-links a::before {
+            content: "▶";
+            font-size: 9px;
+            color: #147d92;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            gap: 11px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+            color: #a2b4bc;
+        }
+
+        @media (max-width: 800px) {
+
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                gap: 14px;
+            }
+
+            .hero-box {
+                padding: 35px 25px;
+                min-height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
     </style>
 </head>
+
 <body>
+
+    <!-- HEADER -->
     <header>
+
         <div class="top-bar">
+
             <div>
                 <div class="logo">Wanderwise Journal</div>
-                <div class="tagline">Travel smarter. Explore further.</div>
+
+                <div class="tagline">
+                    Travel smarter. Explore further.
+                </div>
             </div>
+
         </div>
-        <nav>
+
+        <nav aria-label="Main navigation">
+
             <a href="index.html" class="active">Home</a>
-            <a href="destinations.html">Destinations</a>
-            <a href="travel-guides.html">Travel Guides</a>
-            <a href="itineraries.html">Itineraries</a>
-            <a href="travel-tips.html">Travel Tips</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+
+            <a href="destinations.html">
+                Destinations
+            </a>
+
+            <a href="travel-guides.html">
+                Travel Guides
+            </a>
+
+            <a href="itineraries.html">
+                Itineraries
+            </a>
+
+            <a href="travel-tips.html">
+                Travel Tips
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
         </nav>
+
     </header>
 
+
     <main>
+
+        <!-- HERO / H1 -->
         <section class="hero">
+
             <div class="hero-box">
+
                 <div class="hero-content">
-                    <span class="category">FEATURED TRAVEL</span>
-                    <h1>Discover Places Worth Exploring</h1>
-                    <p>Destination inspiration, practical travel guides and thoughtful itineraries for your next adventure.</p>
-                    <a class="btn" href="destinations.html">Explore Destinations</a>
+
+                    <span class="category">
+                        TRAVEL GUIDES & INSPIRATION
+                    </span>
+
+                    <h1>
+                        Explore Travel Destinations, Guides & Itineraries
+                    </h1>
+
+                    <p>
+                        Discover inspiring travel destinations, practical travel
+                        guides, detailed itineraries and useful travel tips to
+                        help you plan your next journey.
+                    </p>
+
+                    <a class="btn" href="destinations.html">
+                        Explore Travel Destinations
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section class="section">
-            <div class="section-heading">
-                <h2>Latest Travel Stories</h2>
-                <a href="blog.html">View all stories →</a>
-            </div>
-            <div class="cards">
-                <article class="card">
-                    <div class="card-image image-1"></div>
-                    <div class="card-content">
-                        <div class="card-category">DESTINATIONS</div>
-                        <h3>Places That Belong on Your Travel List</h3>
-                        <p>Discover destinations that offer memorable scenery, local experiences and something different.</p>
-                        <a class="read-more" href="blog.html">Read Story →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image image-2"></div>
-                    <div class="card-content">
-                        <div class="card-category">ITINERARIES</div>
-                        <h3>How to Plan a Stress-Free City Trip</h3>
-                        <p>A practical approach to planning your days, choosing experiences and avoiding unnecessary rush.</p>
-                        <a class="read-more" href="blog.html">Read Story →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-image image-3"></div>
-                    <div class="card-content">
-                        <div class="card-category">TRAVEL TIPS</div>
-                        <h3>Simple Ways to Travel Smarter</h3>
-                        <p>Useful travel habits that can make planning, packing and exploring much easier.</p>
-                        <a class="read-more" href="blog.html">Read Story →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
 
+        <!-- INTRODUCTION -->
         <section class="section">
+
             <div class="intro">
-                <h2>Travel With Curiosity</h2>
-                <p>Wanderwise Journal is a travel publication for curious travelers looking for useful destination guides, realistic itineraries and practical advice before their next journey.</p>
+
+                <h2>
+                    Your Guide to Better Travel Planning
+                </h2>
+
+                <p>
+                    Wanderwise Journal is a travel resource for curious travelers
+                    looking for useful destination information, practical travel
+                    guides, detailed trip itineraries and travel planning advice.
+                    Explore destinations, discover things to do and find helpful
+                    information before your next trip.
+                </p>
+
             </div>
+
         </section>
 
+
+        <!-- DESTINATIONS -->
         <section class="section">
-            <div class="section-heading"><h2>Explore Travel Topics</h2></div>
-            <div class="cards">
-                <article class="card">
-                    <div class="card-content">
-                        <div class="card-category">01</div>
-                        <h3>Destinations</h3>
-                        <p>Explore cities, countries and interesting places around the world.</p>
-                        <a class="read-more" href="destinations.html">Explore →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-content">
-                        <div class="card-category">02</div>
-                        <h3>Travel Guides</h3>
-                        <p>Practical information to help you plan a better trip.</p>
-                        <a class="read-more" href="travel-guides.html">Explore →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-content">
-                        <div class="card-category">03</div>
-                        <h3>Itineraries</h3>
-                        <p>Easy-to-follow plans for different destinations and trip lengths.</p>
-                        <a class="read-more" href="itineraries.html">Explore →</a>
-                    </div>
-                </article>
+
+            <div class="section-heading">
+
+                <h2>
+                    Explore Travel Destinations
+                </h2>
+
+                <a href="destinations.html">
+                    View All Destinations →
+                </a>
+
             </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                            alt="Beautiful travel destination with beach and ocean"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            DESTINATIONS
+                        </div>
+
+                        <h3>
+                            Discover Places Worth Exploring
+                        </h3>
+
+                        <p>
+                            Explore interesting destinations, scenic places,
+                            local experiences and useful information to help
+                            you plan your next trip.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="destinations.html"
+                        >
+                            Explore Destinations →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=80"
+                            alt="Travel destination and city sightseeing"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            DESTINATIONS
+                        </div>
+
+                        <h3>
+                            Find Your Next Travel Destination
+                        </h3>
+
+                        <p>
+                            Discover destination ideas and travel inspiration
+                            for your next holiday, weekend getaway or adventure.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="destinations.html"
+                        >
+                            Discover Destinations →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+                            alt="Scenic travel destination in Italy"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL INSPIRATION
+                        </div>
+
+                        <h3>
+                            Explore New Places and Experiences
+                        </h3>
+
+                        <p>
+                            Get ideas for memorable journeys, scenic destinations
+                            and experiences worth adding to your travel plans.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="destinations.html"
+                        >
+                            Explore More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
+
+
+        <!-- TRAVEL GUIDES -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Practical Travel Guides
+                </h2>
+
+                <a href="travel-guides.html">
+                    View Travel Guides →
+                </a>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL GUIDES
+                        </div>
+
+                        <h3>
+                            Destination Travel Guides
+                        </h3>
+
+                        <p>
+                            Find practical information about destinations,
+                            places to visit, things to do, transportation,
+                            trip planning and more.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-guides.html"
+                        >
+                            Read Travel Guides →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL PLANNING
+                        </div>
+
+                        <h3>
+                            Plan Your Journey With Useful Information
+                        </h3>
+
+                        <p>
+                            Prepare for your trip with destination information,
+                            travel planning resources and practical advice.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-guides.html"
+                        >
+                            Explore Guides →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            DESTINATION INFORMATION
+                        </div>
+
+                        <h3>
+                            Things to Know Before You Travel
+                        </h3>
+
+                        <p>
+                            Discover useful travel information before visiting
+                            a new destination and make your trip easier to plan.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-guides.html"
+                        >
+                            View Guides →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ITINERARIES -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Plan Your Trip With Travel Itineraries
+                </h2>
+
+                <a href="itineraries.html">
+                    View Itineraries →
+                </a>
+
+            </div>
+
+
+            <div class="intro">
+
+                <p>
+                    Looking for a day-by-day travel plan? Explore our travel
+                    itineraries for different destinations and trip durations.
+                    Use these itinerary ideas to organize your sightseeing,
+                    activities and travel time.
+                </p>
+
+                <br>
+
+                <a
+                    class="btn"
+                    href="itineraries.html"
+                >
+                    Explore Travel Itineraries
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRAVEL TIPS -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Useful Travel Tips
+                </h2>
+
+                <a href="travel-tips.html">
+                    View Travel Tips →
+                </a>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL TIPS
+                        </div>
+
+                        <h3>
+                            Travel Planning Tips
+                        </h3>
+
+                        <p>
+                            Learn useful ways to prepare for your trip,
+                            organize your plans and make travel easier.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-tips.html"
+                        >
+                            Read Travel Tips →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            BUDGET TRAVEL
+                        </div>
+
+                        <h3>
+                            Smart Travel Planning
+                        </h3>
+
+                        <p>
+                            Discover practical ideas for planning your trip,
+                            managing your travel budget and preparing before departure.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-tips.html"
+                        >
+                            Explore Tips →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL ADVICE
+                        </div>
+
+                        <h3>
+                            Make Your Journey Easier
+                        </h3>
+
+                        <p>
+                            Find useful travel advice covering preparation,
+                            packing, planning and other parts of your journey.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-tips.html"
+                        >
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- LATEST BLOG -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Latest Travel Articles
+                </h2>
+
+                <a href="blog.html">
+                    View All Articles →
+                </a>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL BLOG
+                        </div>
+
+                        <h3>
+                            Travel Stories and Destination Ideas
+                        </h3>
+
+                        <p>
+                            Explore useful travel articles, destination ideas,
+                            seasonal travel inspiration and trip planning topics.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="blog.html"
+                        >
+                            Read Travel Articles →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL INSPIRATION
+                        </div>
+
+                        <h3>
+                            Discover New Travel Ideas
+                        </h3>
+
+                        <p>
+                            Find inspiration for your next holiday and discover
+                            destinations and experiences worth exploring.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="blog.html"
+                        >
+                            Explore Blog →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            TRAVEL INFORMATION
+                        </div>
+
+                        <h3>
+                            Helpful Articles for Travelers
+                        </h3>
+
+                        <p>
+                            Read practical articles designed to help you research,
+                            plan and enjoy your next journey.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="blog.html"
+                        >
+                            Read Our Blog →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPLORE TOPICS -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Explore Travel Topics
+                </h2>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            01
+                        </div>
+
+                        <h3>
+                            Destinations
+                        </h3>
+
+                        <p>
+                            Explore cities, countries, tourist places and
+                            interesting destinations for your next trip.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="destinations.html"
+                        >
+                            Explore Destinations →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            02
+                        </div>
+
+                        <h3>
+                            Travel Guides
+                        </h3>
+
+                        <p>
+                            Find practical destination information and useful
+                            resources to help you plan your journey.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-guides.html"
+                        >
+                            Explore Travel Guides →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            03
+                        </div>
+
+                        <h3>
+                            Itineraries
+                        </h3>
+
+                        <p>
+                            Discover easy-to-follow day-by-day travel plans
+                            for different destinations and trip durations.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="itineraries.html"
+                        >
+                            Explore Itineraries →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            04
+                        </div>
+
+                        <h3>
+                            Travel Tips
+                        </h3>
+
+                        <p>
+                            Get useful travel planning, packing, budgeting
+                            and preparation advice.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="travel-tips.html"
+                        >
+                            Explore Travel Tips →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            05
+                        </div>
+
+                        <h3>
+                            Travel Blog
+                        </h3>
+
+                        <p>
+                            Read travel articles, destination ideas and
+                            useful information for curious travelers.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="blog.html"
+                        >
+                            Read Travel Blog →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card topic-card">
+
+                    <div class="card-content">
+
+                        <div class="card-category">
+                            06
+                        </div>
+
+                        <h3>
+                            About Wanderwise Journal
+                        </h3>
+
+                        <p>
+                            Learn more about Wanderwise Journal and our approach
+                            to creating useful travel content.
+                        </p>
+
+                        <a
+                            class="read-more"
+                            href="about.html"
+                        >
+                            About Us →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="section">
+
+            <div class="intro">
+
+                <h2>
+                    Start Planning Your Next Journey
+                </h2>
+
+                <p>
+                    Explore destinations, read practical travel guides,
+                    discover detailed itineraries and get useful travel tips
+                    before your next adventure.
+                </p>
+
+                <br>
+
+                <a
+                    class="btn"
+                    href="destinations.html"
+                >
+                    Start Exploring
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
+
         <div class="footer-inner">
+
             <div>
-                <h3>Wanderwise Journal</h3>
-                <p>At Wanderwise Journal, we believe travel should be simple, thoughtful and inspiring. From destination ideas to practical guides, we help you plan your next adventure with confidence.</p>
+
+                <h3>
+                    Wanderwise Journal
+                </h3>
+
+                <p>
+                    Wanderwise Journal is a travel resource offering destination
+                    information, practical travel guides, detailed itineraries,
+                    travel tips and useful articles to help travelers plan
+                    their next journey.
+                </p>
+
             </div>
+
+
             <div>
-                <h3>Categories</h3>
+
+                <h3>
+                    Categories
+                </h3>
+
                 <div class="footer-links">
-                    <a href="destinations.html">Destinations</a>
-                    <a href="travel-guides.html">Travel Guides</a>
-                    <a href="itineraries.html">Itineraries</a>
-                    <a href="travel-tips.html">Travel Tips</a>
-                    <a href="blog.html">Blog</a>
+
+                    <a href="destinations.html">
+                        Destinations
+                    </a>
+
+                    <a href="travel-guides.html">
+                        Travel Guides
+                    </a>
+
+                    <a href="itineraries.html">
+                        Itineraries
+                    </a>
+
+                    <a href="travel-tips.html">
+                        Travel Tips
+                    </a>
+
+                    <a href="blog.html">
+                        Blog
+                    </a>
+
                 </div>
+
             </div>
+
+
             <div>
-                <h3>Quick Links</h3>
+
+                <h3>
+                    Quick Links
+                </h3>
+
                 <div class="footer-links">
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="disclaimer.html">Disclaimer</a>
+
+                    <a href="about.html">
+                        About Wanderwise Journal
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="disclaimer.html">
+                        Disclaimer
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
-        <div class="copyright">© 2026 Wanderwise Journal. All rights reserved.</div>
+
+
+        <div class="copyright">
+            © 2026 Wanderwise Journal. All rights reserved.
+        </div>
+
     </footer>
+
 </body>
 </html>
